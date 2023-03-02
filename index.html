@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paralax Scrolling</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="stars.png" id="stars">
+        <h1 id="text">木枯らし 涼しい山の雪</h1>
+        <img src="mountain.png" id="mountain">
+    </section>
+    <div class="sec" id = "sec">
+        <h2 id ="p1">Parallax Scrolling</h2>
+        
+        <p id ="p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat eaque nisi, aliquam dolore quasi fuga, maiores itaque sed culpa ex nam. Et amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla sequi natus perferendis tenetur tempora voluptas dolorem at! Mollitia quasi tempora beatae, architecto magnam quam rerum consequatur fugiat, nemo quo minima.lo Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti, quo est totam quod quam quasi numquam aspernatur natus a distinctio id reprehenderit, soluta delectus exercitationem iure velit ducimus? Sed, totam! laboriosam delectus nulla corporis eaque debitis esse!</p>
+        <br><br>
+        <p id ="p3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat eaque nisi, aliquam dolore quasi fuga, maiores itaque sed culpa ex nam. Et amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla sequi natus perferendis tenetur tempora voluptas dolorem at! Mollitia quasi tempora beatae, architecto magnam quam rerum consequatur fugiat, nemo quo minima.lo Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti, quo est totam quod quam quasi numquam aspernatur natus a distinctio id reprehenderit, soluta delectus exercitationem iure velit ducimus? Sed, totam! laboriosam delectus nulla corporis eaque debitis esse!</p>
+        <br><br>
+        <p id ="p4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat eaque nisi, aliquam dolore quasi fuga, maiores itaque sed culpa ex nam. Et amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla sequi natus perferendis tenetur tempora voluptas dolorem at! Mollitia quasi tempora beatae, architecto magnam quam rerum consequatur fugiat, nemo quo minima.lo Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti, quo est totam quod quam quasi numquam aspernatur natus a distinctio id reprehenderit, soluta delectus exercitationem iure velit ducimus? Sed, totam! laboriosam delectus nulla corporis eaque debitis esse!</p>
+        <br><br>
+        <p id ="p5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat eaque nisi, aliquam dolore quasi fuga, maiores itaque sed culpa ex nam. Et amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla sequi natus perferendis tenetur tempora voluptas dolorem at! Mollitia quasi tempora beatae, architecto magnam quam rerum consequatur fugiat, nemo quo minima.lo Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti, quo est totam quod quam quasi numquam aspernatur natus a distinctio id reprehenderit, soluta delectus exercitationem iure velit ducimus? Sed, totam! laboriosam delectus nulla corporis eaque debitis esse!</p>
+        <br><br>
+        <p id ="p6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat eaque nisi, aliquam dolore quasi fuga, maiores itaque sed culpa ex nam. Et amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla sequi natus perferendis tenetur tempora voluptas dolorem at! Mollitia quasi tempora beatae, architecto magnam quam rerum consequatur fugiat, nemo quo minima.lo Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti, quo est totam quod quam quasi numquam aspernatur natus a distinctio id reprehenderit, soluta delectus exercitationem iure velit ducimus? Sed, totam! laboriosam delectus nulla corporis eaque debitis esse!</p>
+
+    </div>
+    <script>
+        let stars = document.getElementById("stars");
+        let mountain = document.getElementById("mountain");
+        let text = document.getElementById("text");
+        let p1=document.getElementById("p1");
+        let p2=document.getElementById("p2");
+        let p3=document.getElementById("p3");
+        let p4=document.getElementById("p4");
+        let p5=document.getElementById("p5");
+        let p6=document.getElementById("p6");
+
+        window.addEventListener("scroll" , function(){
+            let value = window.scrollY;
+            console.log(value);
+            stars.style.left = value * 0.25 + "px";
+            text.style.top = value * 1.25 + "px";
+            text.style.paddingTop = "100px";
+         });
+    </script>
+</body>
+</html> 
